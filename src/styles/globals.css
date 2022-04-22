@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .link {
+        @apply cursor-pointer hover:underline hover:ring-1 hover:ring-white
+    }
+
+    .button {
+       @apply text-xs md:text-sm bg-gradient-to-b from-[#fee6b0] to-[#eeba37] hover:from-[#fede97] hover:to-[#ecb21f] border-[1px] border-[#be952c] p-1 rounded-sm focus:outline-none focus:ring-2 focus:ring-yellow-500
+    }
+}
